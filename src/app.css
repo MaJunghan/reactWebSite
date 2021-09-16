@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+/* Universal tags 공통 */
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  padding-left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  list-style: none;
+}
+
+button {
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* 패딩,텍스트 스타일링  */
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  margin: 8px 0px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 18px;
+  color: black;
+  margin: 8px 0;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  margin: 4px 0px;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color:transparent;
+  color: white;
+  transition: all 300ms ease-in-out;
+  z-index: 1;
+}
+
+#navbar.navbar--pink {
+  background-color: #5260FB;
+  padding: 8px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.navbar__logo {
+  display: flex;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+
+.navbar__menu__item:hover {
+  border-color: white;
+  background-color: #ff6863;
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: white;
+  display: none;
+}
+
+/* Home */
+#home {
+  background-color: #4E5BEA;
+  padding: 40px;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid #eeeeee;
+}
+
+.home__title {
+  color: white;
+}
+
+
+.home__contact {
+  color: #4E5BEA;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid black;
+}
+.home__contact:hover {
+  background-color: #267CF6;
+}
+
+.home--blur {
+  opacity: 0.5;
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  color: #73aace;
+  border: 1px solid #73aace;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.major__icon i {
+  transition: all 300ms;
+}
+
+.major__icon:hover i {
+  color: pink;
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title,
+.major__description {
+  color:#4d4d4d;
+}
+
+.major__description {
+  font-size: 16px;
 }
