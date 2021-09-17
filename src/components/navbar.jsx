@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from 'img/favicon.png';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   return (
@@ -17,7 +19,7 @@ const Navbar = () => {
       </ul>
 
       <button className="navbar__toggle-btn">
-        <i className="fas fa-bars"></i>
+        <FontAwesomeIcon icon={faBars} />
       </button>
     </nav>
   )

@@ -3,9 +3,9 @@ import { faGithub, faBloggerB } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
-	const contactTitle = `Let's talk`;
+	const contactTitle = `Let's Talk`;
 	const contactEmail = `wjdgksak@naver.com`;
-	const chusin = ` 2021 JungHan's - Site`;
+	const chusin = ` 2021 JungHan - Site`;
 
 	return (
 		<section id="contact" className="section">

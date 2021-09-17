@@ -22,7 +22,7 @@ li {
 }
 
 button {
-  background-color: white;
+  background-color: transparent;
   cursor: pointer;
   border: none;
   outline: none;
@@ -96,7 +96,7 @@ p {
   margin: 0 4px;
   color: white;
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid transparent;
   border-radius: 4px;
 }
 
@@ -111,7 +111,7 @@ p {
   top: 24px;
   right: 32px;
   font-size: 24px;
-  color: white;
+  color: black;
   display: none;
 }
 
@@ -136,16 +136,17 @@ p {
 
 
 .home__contact {
-  color: #4E5BEA;
+  color: white;
   font-size: 18px;
   font-weight: 600;
   margin: 24px;
   padding: 8px 12px;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 .home__contact:hover {
   background-color: #ff6863;
 }
+
 
 .home--blur {
   opacity: 0.5;
@@ -419,7 +420,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: #fe918d;
+    background-color: #5260FB;
   }
   #navbar.navbar--pink {
     padding: 16px;
