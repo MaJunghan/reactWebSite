@@ -1,6 +1,7 @@
 import React from 'react';
 import { faHtml5, faReact, faVuejs } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const About = () => {
 	return (
 		<section id="about" className="section section__container">

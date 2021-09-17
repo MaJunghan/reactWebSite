@@ -33,9 +33,9 @@ const Skills = () => {
 				<div className="skillset">
 					<div className="skillset__left">
 						<h3 className="skillset__title">Skills</h3>
-						<li>
+						<ui>
 							{skillSetList}
-						</li>
+						</ui>
 					</div>
 					<div className="skillset__right">
 						<div className="tools">
