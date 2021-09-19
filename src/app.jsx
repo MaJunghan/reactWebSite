@@ -8,20 +8,21 @@ import Projects from 'components/projects';
 import Contact from 'components/contact';
 
 function App() {
+  const [navShow, setNavShow] = useState('');
   const [scroll, setScroll] = useState(0);
 
   const scrollEvent = () => {
     setScroll(window.scrollY);
+    scroll > 200 ? setNavShow('navbar.navbar--blue') : setNavShow('navbar');
   };
 
   useEffect(() => {
     window.addEventListener('scroll', scrollEvent);
-    console.log(`scroll값은 ?? : ${scroll}`);
   });
 
   return (
     <>
-      <Navbar />
+      <Navbar navShow={navShow} />
       <Introduction />
       <About />
       <Skills />

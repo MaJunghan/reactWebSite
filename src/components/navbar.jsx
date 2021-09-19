@@ -3,15 +3,15 @@ import logo from 'img/favicon.png';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Navbar = () => {
+const Navbar = ({ navShow }) => {
   return (
-    <nav id="navbar">
+    <nav id={navShow}>
       <div className="navbar__logo">
         <img className="logo" src={logo} alt="lo" />
         <a href="#"> JungHan </a>
       </div>
       <ul className="navbar__menu">
-        <li className="navbar__menu__item active" data-link="#home">
+        <li className="navbar__menu__item" data-link="#home">
           Home
         </li>
         <li className="navbar__menu__item" data-link="#about">
