@@ -13,7 +13,7 @@ function App() {
 
   const scrollEvent = () => {
     setScroll(window.scrollY);
-    scroll > 200 ? setNavShow('navbar.navbar--blue') : setNavShow('navbar');
+    scroll > 200 ? setNavShow('navbar--blue') : setNavShow('');
   };
 
   useEffect(() => {

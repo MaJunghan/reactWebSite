@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navbar = ({ navShow }) => {
   return (
-    <nav id={navShow}>
+    <nav id="navbar" className={navShow}>
       <div className="navbar__logo">
         <img className="logo" src={logo} alt="lo" />
         <a href="#"> JungHan </a>
