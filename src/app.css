@@ -160,6 +160,8 @@ p {
   margin: auto;
 }
 
+
+
 /* About */
 .about__majors {
   display: flex;
@@ -178,11 +180,11 @@ p {
   border-radius: 50%;
   margin-bottom: 16px;
 }
-.major__icon i {
+.major__icon  {
   transition: all 300ms;
 }
 
-.major__icon:hover i {
+.major__icon:hover  {
   color: pink;
   transform: rotate(-30deg) scale(1.1);
 }
@@ -375,9 +377,9 @@ p {
   transition: all 300ms;
 }
 
-.contact__links i:hover {
+.contact__links :hover {
   transform: scale(1.1);
-  color: var(--color-yellow);
+  color: #fff7d1;
 }
 
 .iconGit {

@@ -5,11 +5,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navbar = ({ navShow }) => {
   const navMenuRef = useRef([]);
-  const clickNavitem = () => {
-    if (navMenuRef === 1) {
-      console.log(navMenuRef.current)
-    }
+  const navMenuItemList = [
+    { id: 1, className: "navbar__menu__item", menuName: "Home" },
+    { id: 2, className: "navbar__menu__item", menuName: "About" },
+    { id: 3, className: "navbar__menu__item", menuName: "Skills" },
+    { id: 4, className: "navbar__menu__item", menuName: "My work" },
+    { id: 5, className: "navbar__menu__item", menuName: "Contact" },
+  ]
+
+  const onClickMenu = () => {
+    console.log(navMenuRef.current)
   }
+
+  const navMenuList = navMenuItemList.map((navMenuObj,index) => {
+    return (
+      <li key={navMenuObj.id} className={navMenuObj.className} ref={el => (navMenuRef.current[index] = el)} onClick={onClickMenu(index)}>
+        {navMenuObj.menuName}
+      </li>
+    )
+  })
 
 
   return (
@@ -19,21 +33,7 @@ const Navbar = ({ navShow }) => {
         <a href="#"> JungHan </a>
       </div>
       <ul className="navbar__menu">
-        <li className="navbar__menu__item" data-link="#home" ref={el => (navMenuRef.current[0] = el)} onClick={clickNavitem}>
-          Home
-        </li>
-        <li className="navbar__menu__item" data-link="#about" ref={el => (navMenuRef.current[1] = el)} onClick={clickNavitem}>
-          About
-        </li>
-        <li className="navbar__menu__item" data-link="#skills" ref={el => (navMenuRef.current[2] = el)} onClick={clickNavitem}>
-          Skills
-        </li>
-        <li className="navbar__menu__item" data-link="#work" ref={el => (navMenuRef.current[3] = el)} onClick={clickNavitem}>
-          My work
-        </li >
-        <li className="navbar__menu__item" data-link="#contact" ref={el => (navMenuRef.current[4] = el)} onClick={clickNavitem}>
-          Contact
-        </li>
+        {navMenuList}
       </ul>
 
       <button className="navbar__toggle-btn">

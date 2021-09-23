@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './app.css';
+
 import Navbar from 'components/navbar';
 import Introduction from 'components/introduction';
 import About from 'components/about';
