@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/reactWebSite/static/css/main.1af1af8c.chunk.css",
+    "main.js": "/reactWebSite/static/js/main.5485cd5d.chunk.js",
+    "main.js.map": "/reactWebSite/static/js/main.5485cd5d.chunk.js.map",
+    "runtime-main.js": "/reactWebSite/static/js/runtime-main.b285a6ea.js",
+    "runtime-main.js.map": "/reactWebSite/static/js/runtime-main.b285a6ea.js.map",
+    "static/js/2.83a7567c.chunk.js": "/reactWebSite/static/js/2.83a7567c.chunk.js",
+    "static/js/2.83a7567c.chunk.js.map": "/reactWebSite/static/js/2.83a7567c.chunk.js.map",
+    "index.html": "/reactWebSite/index.html",
+    "static/css/main.1af1af8c.chunk.css.map": "/reactWebSite/static/css/main.1af1af8c.chunk.css.map",
+    "static/js/2.83a7567c.chunk.js.LICENSE.txt": "/reactWebSite/static/js/2.83a7567c.chunk.js.LICENSE.txt",
+    "static/media/favicon.4207c359.png": "/reactWebSite/static/media/favicon.4207c359.png",
+    "static/media/me.ecf2e44b.jpg": "/reactWebSite/static/media/me.ecf2e44b.jpg",
+    "static/media/react.fa9912c5.PNG": "/reactWebSite/static/media/react.fa9912c5.PNG",
+    "static/media/reacthook.b3e0adb3.PNG": "/reactWebSite/static/media/reacthook.b3e0adb3.PNG",
+    "static/media/vueTodo.c108ccfa.PNG": "/reactWebSite/static/media/vueTodo.c108ccfa.PNG",
+    "static/media/vuexNews.44f3677d.png": "/reactWebSite/static/media/vuexNews.44f3677d.png",
+    "static/media/vuexTodo.e4bc792c.png": "/reactWebSite/static/media/vuexTodo.e4bc792c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b285a6ea.js",
+    "static/js/2.83a7567c.chunk.js",
+    "static/css/main.1af1af8c.chunk.css",
+    "static/js/main.5485cd5d.chunk.js"
+  ]
+}
