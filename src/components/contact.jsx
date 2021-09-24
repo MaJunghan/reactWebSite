@@ -7,6 +7,7 @@ const Contact = () => {
   const contactEmail = `wjdgksak@naver.com`;
   const chusin = ` 2021 JungHan - Site`;
 
+  
   return (
     <section id="contact" className="section">
       <h1 className="contact__title">{contactTitle}</h1>

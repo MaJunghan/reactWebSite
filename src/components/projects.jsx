@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import vueTodo from 'img/vueTodo.PNG';
 import vuexTodo from 'img/vuexTodo.png';
 import vuexNews from 'img/vuexNews.png';
@@ -6,19 +6,23 @@ import habit from 'img/react.PNG';
 import youtube from 'img/reacthook.PNG';
 
 const Projects = () => {
+  const [projectToggle, setProjectToglle] = useState(false);
+  
+  const clickToggle = () => {
+    setProjectToglle(!projectToggle);
+    console.log(projectToggle)
+  }
+
   return (
     <section id="work" className="section">
-      <div className="section__container">
+      <div className="section__container" >
         <h1>My work</h1>
         <h3>Projects</h3>
         <div className="work__catagories">
-          <button className="category__btn selected" data-filter="*">
-            All<span className="category__count"> 5 </span>
-          </button>
-          <button className="category__btn" data-filter="framework">
+          <button className={projectToggle ? "category__btn":"category__btn selected"} onClick={clickToggle}>
             Vue.js<span className="category__count"> 3 </span>
           </button>
-          <button className="category__btn" data-filter="library">
+          <button className={projectToggle ? "category__btn selected":"category__btn"} onClick={clickToggle}>
             React.js<span className="category__count"> 2 </span>
           </button>
         </div>
@@ -26,9 +30,8 @@ const Projects = () => {
         <div className="work__projects">
           <a
             href="https://github.com/MaJunghan/TodoList"
-            className="project"
+            className={projectToggle ? "project invisible": "project"}
             target="blank"
-            data-type="framework"
           >
             <img className="project_img" src={vueTodo} alt="Vue Todo" />
             <div className="project__description">
@@ -43,9 +46,8 @@ const Projects = () => {
           </a>
           <a
             href="https://github.com/MaJunghan/TodoVuex"
-            className="project"
+            className={projectToggle ? "project invisible": "project"}
             target="blank"
-            data-type="framework"
           >
             <img className="project_img" src={vuexTodo} alt="VueX Todo" />
             <div className="project__description">
@@ -60,9 +62,8 @@ const Projects = () => {
           </a>
           <a
             href="https://github.com/MaJunghan/Vuecli3"
-            className="project"
+            className={projectToggle ? "project invisible": "project"}
             target="blank"
-            data-type="framework"
           >
             <img className="project_img" src={vuexNews} alt="Vuex News" />
             <div className="project__description">
@@ -70,16 +71,16 @@ const Projects = () => {
               <span>
                 비동기 처리의 상태관리
                 <br />
-                view에서 dispatch를통해 <br />
+                Vue에서 dispatch를통해 <br />
                 비동기처리가 왔을때 Ation을 호출 <br />
                 트랜지션 사용 LoaDingBar 구현
               </span>
             </div>
           </a>
-          <a href="#" className="project" target="blank" data-type="library">
+          <a href="#" className={projectToggle ? "project": "project invisible"} target="blank">
             <img className="project_img" src={habit} alt="React Class" />
             <div className="project__description">
-              <h3>Habit-tracker</h3>
+              <h3>Habit-tracker Clone Coding</h3>
               <span>
                 react Class Component로 만든 <br />
                 취미목록 App <br />
@@ -87,7 +88,7 @@ const Projects = () => {
               </span>
             </div>
           </a>
-          <a href="#" className="project" target="blank" data-type="library">
+          <a href="#" className={projectToggle ? "project": "project invisible"} target="blank" >
             <img className="project_img" src={youtube} alt="React Class" />
             <div className="project__description">
               <h3>Youtube Clone Coding</h3>

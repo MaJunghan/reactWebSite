@@ -20,6 +20,8 @@ function App() {
     window.addEventListener('scroll', scrollEvent);
   });
 
+
+
   return (
     <>
       <Navbar navShow={navShow} />
@@ -28,9 +30,6 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
-      <button className="arrow-up">
-        <i className="fas fa-arrow-up"></i>
-      </button>
     </>
   );
 }
