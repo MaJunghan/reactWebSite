@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './app.css';
+import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import Navbar from 'components/navbar';
 import Introduction from 'components/introduction';
 import About from 'components/about';
@@ -21,8 +22,15 @@ function App() {
   });
 
   return (
-    <>
+    <Router>
       <Navbar navShow={navShow} />
+      <Switch>
+        <Route exact path="/" component={Introduction}></Route>
+        <Route path="/about" component={About}></Route>
+        <Route path="/skill" component={Skills}></Route>
+        <Route path="/work" component={Projects}></Route>
+        <Route path="/conta" component={Contact}></Route>
+      </Switch>
       <Introduction />
       <About />
       <Skills />
@@ -31,7 +39,7 @@ function App() {
       <button className="arrow-up">
         <i className="fas fa-arrow-up"></i>
       </button>
-    </>
+    </Router>
   );
 }
 
