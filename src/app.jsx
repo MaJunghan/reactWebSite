@@ -20,8 +20,6 @@ function App() {
     window.addEventListener('scroll', scrollEvent);
   });
 
-
-
   return (
     <>
       <Navbar navShow={navShow} />
